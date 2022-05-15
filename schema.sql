@@ -5,6 +5,7 @@ CREATE TABLE departments (
      PRIMARY KEY (dept_no),
      UNIQUE (dept_name)
 );
+
 CREATE TABLE employees (
 	 emp_no INT NOT NULL,
      birth_date DATE NOT NULL,
@@ -49,4 +50,5 @@ CREATE TABLE titles(
 	to_date DATE NOT NULL,
 	FOREIGN KEY (emp_no) REFERENCES employees(emp_no),
 );
+
 
