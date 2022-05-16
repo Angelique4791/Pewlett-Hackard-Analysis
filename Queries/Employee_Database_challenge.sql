@@ -12,4 +12,16 @@ INNER JOIN titles as tl
 ON (e.emp_no = tl.emp_no)
 WHERE (e.birth_date BETWEEN '1952-01-01' AND '1955-12-31')
      AND (e.hire_date BETWEEN '1985-01-01' AND '1988-12-31')
-	      AND (tl.to_date = '9999-01-01');  
+	      AND (tl.to_date = '9999-01-01')
+		  ORDER BY tl.emp_no DESC; 
+
+-- Use Dictinct with Orderby to remove duplicate rows
+-- SELECT DISTINCT ON (______) _____,
+-- ______,
+-- ______,
+-- ______
+
+-- INTO nameyourtable
+-- FROM _______
+-- WHERE _______
+-- ORDER BY _____, _____ DESC;
